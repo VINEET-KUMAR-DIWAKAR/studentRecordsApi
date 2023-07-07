@@ -6,10 +6,10 @@ const studentSchema = new mongoose.Schema({
         type:String,
         require:true
     },
-    rollNo:{
+    ranking:{
         type: Number,
-        unique: true,
-        require:true
+        require:true,
+        unique :true
     },
     email: {
         type:String,
@@ -21,7 +21,6 @@ const studentSchema = new mongoose.Schema({
         require:true
     }
 });
-
 
 // creating model 
 const StudentModel = new mongoose.model('StudentModel',studentSchema);
